@@ -179,7 +179,7 @@ def runs_test(byte_data):
     success = (p >= 0.01)
     return (success, p, None)
 
-def local_nibbles_variance(byte_data, window_size=64):
+def local_nibbles_variance(byte_data, window_size=64, threshold=46.98):
     """
     Feature: Local Nibbles Variance (LNV)
     
@@ -238,8 +238,8 @@ def local_nibbles_variance(byte_data, window_size=64):
     # Compute Chi-Square for each window: sum((O - E)^2 / E)
     # Result is array of shape (n_windows,)
     chi2_scores = np.sum(((counts - E) ** 2) / E, axis=1)
-    float(np.var(chi2_scores))<=46.98
-    success = float(np.var(chi2_scores))<=46.981
+    
+    success = float(np.var(chi2_scores))<=threshold
         
     # 5. Return the Variance of these scores
     return (success, float(np.var(chi2_scores)),  None)
