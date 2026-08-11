@@ -87,19 +87,7 @@ Each fragment goes through all four tests, and each test returns pass/fail based
 
 A fragment only gets labeled *encrypted* when all four agree.
 
-## Citation
 
-If you use AFRL in your research, please cite:
-
-```bibtex
-@article{aliaskarihosseinabadi2026afrl,
-  title   = {AFRL: A Lightweight Statistical Framework for Real-Time Detection of Encrypted File Fragments},
-  author  = {Aliaskari Hosseinabadi, Alireza and Teimouri, Mehdi},
-  year    = {2026},
-  note    = {Submitted to Array Journal (under review)},
-  url     = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6799741}
-}
-```
 
 ## License
 
